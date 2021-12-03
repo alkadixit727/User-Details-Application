@@ -1,0 +1,66 @@
+[
+    {
+        "name" : "Alka Dixit",
+        "email" : "alka@gmail.com",
+        "gender" : "Male",
+        "address" : "aluwadi , Normal Road, Kunadali",
+        "dateofBirth" : "2021-12-30"
+        
+    },
+
+    {
+        "name" : "Aditi Dixit",
+        "email" : "alka@gmail.com",
+        "gender" : "Female",
+        "address" : "aluwadi , Normal Road, Kunadali",
+        "dateofBirth" : "2021-12-30"
+        
+    },
+
+    {
+        "name" : "Ashu Dixit",
+        "email" : "alka@gmail.com",
+        "gender" : "Female",
+        "address" : "aluwadi , Normal Road, Kunadali",
+        "dateofBirth" : "2021-12-30"
+        
+    },
+
+
+    {
+        "name" : "Himanshu Dixit",
+        "email" : "alka@gmail.com",
+        "gender" : "Female",
+        "address" : "aluwadi , Normal Road, Kunadali",
+        "dateofBirth" : "2021-12-30"
+        
+    },
+    {
+        "name" : "Urmila Dixit",
+        "email" : "aloa@gmail.com",
+        "gender" : "Female",
+        "address" : "aluwadi , Normal Road, Kunadali",
+        "dateofBirth" : "2021-12-30"
+        
+    },
+
+    {
+        "name" : "Priyansh Dixit",
+        "email" : "pka@gmail.com",
+        "gender" : "Male",
+        "address" : "aluwadi , Normal Road, Kunadali",
+        "dateofBirth" : "2021-12-30"
+        
+    },
+
+    {
+        "name" : "Aditya Dixit",
+        "email" : "ala@gmail.com",
+        "gender" : "Male",
+        "address" : "aluwadi , Normal Road, Kunadali",
+        "dateofBirth" : "2021-12-30"
+        
+    }
+
+
+]

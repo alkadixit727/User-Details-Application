@@ -1,0 +1,100 @@
+<div>
+  <h4>User Details Form</h4>
+</div>
+
+<div class="p-4" *ngIf="!readOnly">
+  <form [formGroup]="userForm" (submit)="submit()">
+    <div class="d-flex justify-content-between">
+      <span class="mt-4">Name</span>
+    <mat-form-field class="form-field w-75" appearance="outline">
+      <mat-label> Enter Name
+      </mat-label>
+      <input matInput formControlName="name" required>
+      <mat-error *ngIf="userForm.controls.name.touched && userForm.controls.name.invalid">
+        <span *ngIf="userForm.controls.name.errors.required"> Name is mandatory.</span>
+        <!-- <span *ngIf="userForm.controls.name.errors.pattern">First Name is invalid.</span> -->
+      </mat-error>
+    </mat-form-field>
+  </div>
+
+
+
+<div class="d-flex justify-content-between">
+  <span class="mt-4">Email</span>
+<mat-form-field class="form-field w-75" appearance="outline">
+  <mat-label> Email
+  </mat-label>
+  <input matInput formControlName="email" required>
+  <mat-error *ngIf="userForm.controls.email.touched && userForm.controls.email.invalid">
+    <span *ngIf="userForm.controls.email.errors.required">Email is mandatory.</span>
+    <span *ngIf="userForm.controls.email.errors.pattern">Email is invalid.</span>
+  </mat-error>
+</mat-form-field>
+</div>
+
+<!-- <div class="d-flex justify-content-between">
+  <span class="mt-4">Gender</span>
+<mat-form-field class="form-field w-75" appearance="outline">
+  <mat-label> Gender
+  </mat-label>
+  <mat-radio-group aria-label="Select an gender"  formControlName="gender" required>
+    <mat-radio-button value="Male">Male</mat-radio-button>
+    <mat-radio-button value="Female">Female</mat-radio-button>
+  </mat-radio-group>
+  
+</mat-form-field>
+</div> -->
+
+
+<div class="d-flex justify-content-between">
+  <span class="mt-4">Address</span>
+<mat-form-field class="form-field w-75" appearance="outline">
+  <mat-label> Enter Address
+  </mat-label>
+  <input type="address" matInput formControlName="address" required>
+  <mat-error *ngIf="userForm.controls.address.touched && userForm.controls.address.invalid">
+    <span *ngIf="userForm.controls.address.errors.required">address is mandatory.</span>
+  </mat-error>
+</mat-form-field>
+</div>
+
+
+
+<div class="mb-2">
+  <span class="mt-4">Gender</span>
+<!-- <mat-form-field class="form-field w-75" appearance="outline"> -->
+  <mat-radio-button  style="margin-left: 70px; margin-bottom: 10px;" class = "tp-radio-button"
+  *ngFor = "let g of gender" [value] = "g" [checked]="gender">
+  {{g}}
+</mat-radio-button>
+ 
+ 
+<!-- </mat-form-field> -->
+</div>
+
+<div class="d-flex justify-content-between">
+  <span class="mt-4">Date of Birth</span>
+<mat-form-field class="form-field w-75" appearance="outline">
+  <mat-label> Enter Date of Birth
+  </mat-label>
+  <input type="date" matInput formControlName="dateofBirth" required>
+  <mat-error *ngIf="userForm.controls.dateofBirth.touched && userForm.controls.dateofBirth.invalid">
+    <span *ngIf="userForm.controls.dateofBirth.errors.required">dateofBirth is mandatory.</span>
+  </mat-error>
+</mat-form-field>
+</div>
+
+
+
+
+<div class="d-flex justify-content-between">
+<button  mat-stroked-button (click)="close()" >Cancel</button>
+<div>
+<button style="margin-right: 15px;" mat-stroked-button type="submit">Submit</button>
+
+<button  mat-stroked-button (click)="reset()">Clear</button>
+</div>
+</div>
+
+  </form>
+</div>

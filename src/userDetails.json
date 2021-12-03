@@ -1,0 +1,46 @@
+ [
+    {
+        "name" : "Alka Dixit",
+        "email" : "alka@gmail.com",
+        "gender" : "Female",
+        "address" : "aluwadi , Normal Road, Kunadali",
+        "dateofBirth" : "08/09/1998"
+        
+    },
+
+    {
+        "name" : "Aditi Dixit",
+        "email" : "alka@gmail.com",
+        "gender" : "Female",
+        "address" : "aluwadi , Normal Road, Kunadali",
+        "dateofBirth" : "08/09/1998"
+        
+    },
+
+    {
+        "name" : "Ashu Dixit",
+        "email" : "alka@gmail.com",
+        "gender" : "Female",
+        "address" : "aluwadi , Normal Road, Kunadali",
+        "dateofBirth" : "08/09/1998"
+        
+    },
+
+
+    {
+        "name" : "Himanshu Dixit",
+        "email" : "alka@gmail.com",
+        "gender" : "Female",
+        "address" : "aluwadi , Normal Road, Kunadali",
+        "dateofBirth" : "08/09/1998"
+        
+    },
+    {
+        "name" : "Urmila Dixit",
+        "email" : "alka@gmail.com",
+        "gender" : "Female",
+        "address" : "aluwadi , Normal Road, Kunadali",
+        "dateofBirth" : "08/09/1998"
+        
+    }
+]

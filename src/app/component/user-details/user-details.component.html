@@ -1,0 +1,76 @@
+<div class="d-flex flex-row">
+<div class="w-75">
+  <div class="d-flex justify-content-between flex-row p-4" >
+    <div class="container">
+      <!-- <title>USER LIST</title> -->
+      <h4>USER LIST</h4>
+    
+    </div>
+    <div>
+      <button style="margin-right: 50px;" mat-raised-button color="primary" (click)="openUserForm()">+ Add User</button>
+    </div>
+    
+  </div>
+
+<div *ngIf="usersData.length!=0" class="col-md-12 mb-4 p-5">
+  <table class=" table border bg-light">
+    <thead>
+      <tr>
+        <th><mat-checkbox unchecked="true">
+        </mat-checkbox></th>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Gender</th>
+        <th>Address</th>
+        
+        <th>Date of Birth</th>
+<th></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let user of usersData">
+   <td><mat-checkbox unchecked="true">
+  </mat-checkbox></td>
+        <td><span> {{user.name}}</span></td>
+        <td><span> {{user.email}}</span></td>
+        <td><span> {{user.gender}}</span></td>
+        <td><span> {{user.address}}</span></td>
+        <td><span> {{user.dateofBirth}}</span></td>
+        <!-- <td><button type="button" class="btn btn-primary" (click)="removeItem(user)">Remove</button></td> -->
+        <td>
+          <div class="d-flex justify-content-between flex-row" >
+           <mat-icon class="mr-2" (click)="editUser(user)" title="Edit">edit</mat-icon> 
+           <mat-icon title="Delete" (click)="removeItem(user)">delete_outline</mat-icon>
+           </div>
+        </td>
+        <!-- <td> <mat-icon title="Delete" (click)="removeItem(user)">delete_outline</mat-icon></td> -->
+
+      </tr>
+    </tbody>
+  </table>
+
+</div>
+</div>
+<div style="margin-top:10vw ;">
+  <div>
+    <h4>Progress</h4>
+  </div>
+  <div>
+    {{bufferValue}}
+    <mat-progress-bar 
+          class="example-margin"
+          color="#00a99d"
+          [mode]="mode"
+          value="userLength"
+          bufferValue="totalLength">
+      </mat-progress-bar>
+  </div>
+  <div>
+    <h6>Male Users: {{maleUser}}</h6>
+    <h6>Female Users: {{femaleUser}}</h6>
+  </div>
+
+</div>
+</div>
+
+
